@@ -29,11 +29,11 @@ nums.forEach(num => {
 // adiciona evento de clique para botão 'ponto/virgula'.
 dotKey.addEventListener('click', () => {
 
-  if(lastKey != "operator"){
+  if(lastKey != "operator" || lastKey != "dot"){
 
     if (dotVerification(screen.innerText) == false) {
       screen.innerText += ".";
-      lastKey = "operator"
+      lastKey = "dot"
       console.log(lastKey)
       return
     }
@@ -43,13 +43,13 @@ dotKey.addEventListener('click', () => {
     if (dotVerification(screen.innerText) == false) {
       backspace();
       screen.innerText += ".";
-      lastKey = "operator"
+      lastKey = "dot"
       console.log(lastKey)
       return
     }
   }
 
-  lastKey = "operator"
+  lastKey = "dot"
   console.log(lastKey)
 
 });
@@ -66,9 +66,9 @@ operators.forEach(operator => {
       case "plus":
 
         
-      if(lastKey != "operator"){
+      if(lastKey != "operator"){ //se a última tecla pressionada não for um operador...
 
-        if(operatorVerification(screen.innerText) == true){
+        if(operatorVerification(screen.innerText) == true){ //
           console.log('A expressão contém um operador.');
           subScreen.innerText = screen.innerText + " =";
           calculate()
@@ -80,7 +80,8 @@ operators.forEach(operator => {
 
         screen.innerText += "+";
       }
-      else{
+      else{ //se a última tecla pressionada for um operador...
+        
         backspace();
         screen.innerText += "+";
       }
