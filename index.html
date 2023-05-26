@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>JS-Calc | Calculadora com JavaScrypt</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <main class="mainContainer">
+
+        <section class="calcBody">
+
+            <section class="screenContainer">
+
+                <p class="subScreen" id="subScreen">
+0
+                </p>
+
+                <p class="screen" id="screen">
+                    0
+                </p>
+
+            </section>
+
+            <section class="keyboard">
+
+                <button id="cleanScreen" class="functionKey">LIMPAR</button>
+
+                <button id="backspace" class="functionKey">
+                    <img src="assets/backspace.svg" alt="" class="keySign">
+                </button>
+
+                <button id="seven" class="numKey">7</button>
+
+                <button id="eight" class="numKey">8</button>
+
+                <button id="nine" class="numKey">9</button>
+
+                <button id="division" class="operatorKey">
+                    <img src="assets/division.svg" alt="" class="keySign">
+                </button>
+
+                <button id="four" class="numKey">4</button>
+
+                <button id="five" class="numKey">5</button>
+
+                <button id="six" class="numKey">6</button>
+
+                <button id="multiplication" class="operatorKey">
+                    <img src="assets/multiplication.svg" alt="" class="keySign">
+                </button>
+
+                <button id="one" class="numKey">1</button>
+
+                <button id="two" class="numKey">2</button>
+
+                <button id="three" class="numKey">3</button>
+
+                <button id="minus" class="operatorKey">
+                    <img src="assets/minus.svg" alt="" class="keySign">
+                </button>
+
+                <button id="dotKey" class="dotKey">.</button>
+
+                <button id="zero" class="numKey">0</button>
+
+                <button id="equals" class="operatorKey">
+                    <img src="assets/equals.svg" alt="" class="keySign">
+                </button>
+
+                <button id="plus" class="operatorKey">
+                    <img src="assets/plus.svg" alt="" class="keySign">
+                </button>
+
+            </section>
+        </section>
+
+        <section class="alert" id="alert">
+            <p class="alertText" id="alertText">
+                Verifique a expressão e tente novamente!
+            </p>
+
+            <button class="alertOk" id="alertOk">OK!</button>
+        </section>
+
+    </main>
+    <script src="scrypt.js"></script>  
+</body>
+
+</html>
