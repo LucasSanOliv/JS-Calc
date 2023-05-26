@@ -32,6 +32,6 @@ A calculadora foi desenvolvida de forma responsiva, o que significa que se adapt
 </ul>
 
 <div align="start">
-<img src="https://github.com/LucasSanOliv/hensui-japanese-couisine/blob/main/assets/print-hensui.jpg" 
+<img src="https://github.com/LucasSanOliv/JS-Calc/blob/main/assets/print.png" 
      width="80%"/>
 </div>
